@@ -1,0 +1,47 @@
+services:
+
+  voteservice:
+    build: .
+    hostname: voteservice
+    container_name: voteservice
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    container_name: postgres_agenda
+    restart: always
+    environment:
+      POSTGRES_DB: agendaDB
+      POSTGRES_USER: agenda_user
+      POSTGRES_PASSWORD: agenda_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agenda_user"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_agenda
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@softdesign.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  postgres_data:
+  pgadmin_data:
