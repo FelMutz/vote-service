@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: softdesignvote
+  jackson:
+    time-zone: America/Sao_Paulo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/agendaDB
+    username: agenda_user
+    password: agenda_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    driver-class-name: org.postgresql.Driver
+
+cpf:
+    api:
+        url: https://cpf-validator-service.onrender.com/
+jobs:
+  session-agenda:
+    cron: "0 0/1 * * * ?"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,circuitbreakers
+  endpoint:
+    health:
+      show-details: always
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      cpfValidatorCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
