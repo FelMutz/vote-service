@@ -15,7 +15,7 @@ import java.util.concurrent.CompletableFuture;
 
 @Service
 @RequiredArgsConstructor
-public class CpfValidatorIntegration {
+class CpfValidatorIntegration {
 
     private final RestClient restClient;
 

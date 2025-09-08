@@ -52,10 +52,11 @@
         compileOnly 'org.projectlombok:lombok:1.18.38'
         annotationProcessor 'org.projectlombok:lombok:1.18.38'
 
-        testImplementation 'org.instancio:instancio-core:2.6.0'
-        testImplementation 'org.instancio:instancio-junit:2.9.0'
-
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        testImplementation 'org.mockito:mockito-core'
+        testImplementation 'org.mockito:mockito-junit-jupiter'
+        testCompileOnly 'org.projectlombok:lombok:1.18.38'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.38'
 
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 

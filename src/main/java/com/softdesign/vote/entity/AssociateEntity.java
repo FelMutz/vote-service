@@ -3,6 +3,7 @@ package com.softdesign.vote.entity;
 import com.softdesign.vote.dto.AssociateDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.SQLRestriction;
 
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 @Table(name = "associate")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @SQLRestriction("delete_date IS NULL")
 public class AssociateEntity {
 

@@ -3,6 +3,7 @@ package com.softdesign.vote.entity;
 import com.softdesign.vote.dto.AgendaDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import java.time.LocalDate;
 @Table(name = "agenda")
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class AgendaEntity {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
