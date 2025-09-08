@@ -1,6 +1,6 @@
-package com.softdesign.vote.v1.controller.v1.agenda;
+package com.softdesign.vote.controller.v1.agenda;
 
-import com.softdesign.vote.service.agenda.AgendaDto;
+import com.softdesign.vote.dto.AgendaDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

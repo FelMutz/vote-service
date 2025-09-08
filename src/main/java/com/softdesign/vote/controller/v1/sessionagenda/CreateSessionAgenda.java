@@ -1,7 +1,6 @@
-package com.softdesign.vote.v1.controller.v1.sessionagenda;
+package com.softdesign.vote.controller.v1.sessionagenda;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.softdesign.vote.service.sessionagenda.SessionAgendaDto;
+import com.softdesign.vote.dto.SessionAgendaDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

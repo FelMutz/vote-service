@@ -1,7 +1,7 @@
-package com.softdesign.vote.v1.service.associate;
+package com.softdesign.vote.dto;
 
 import com.softdesign.vote.controller.v1.associate.Associate;
-import com.softdesign.vote.v1.entity.AssociateEntity;
+import com.softdesign.vote.entity.AssociateEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

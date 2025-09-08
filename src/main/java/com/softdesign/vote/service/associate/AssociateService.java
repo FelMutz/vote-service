@@ -1,10 +1,12 @@
-package com.softdesign.vote.v1.service.associate;
+package com.softdesign.vote.service.associate;
 
-import com.softdesign.vote.v1.entity.AssociateEntity;
-import com.softdesign.vote.v1.repository.AssociateRepository;
+import com.softdesign.vote.dto.AssociateDto;
+import com.softdesign.vote.entity.AssociateEntity;
+import com.softdesign.vote.repository.AssociateRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
@@ -36,6 +38,7 @@ class AssociateService {
         return associateRepository.save(associateDTO.toEntity()).toDTO();
     }
 
+    @Transactional
     public void deleteAssociate(Long id) {
         associateRepository.softDeleteById(id);
     }

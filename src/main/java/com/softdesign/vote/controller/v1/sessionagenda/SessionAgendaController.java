@@ -1,4 +1,4 @@
-package com.softdesign.vote.v1.controller.v1.sessionagenda;
+package com.softdesign.vote.controller.v1.sessionagenda;
 
 import com.softdesign.vote.service.sessionagenda.SessionAgendaFacade;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,8 @@
-package com.softdesign.vote.v1.service.agenda;
+package com.softdesign.vote.service.agenda;
 
-import com.softdesign.vote.v1.entity.AgendaEntity;
-import com.softdesign.vote.v1.repository.AgendaRepository;
+import com.softdesign.vote.dto.AgendaDto;
+import com.softdesign.vote.entity.AgendaEntity;
+import com.softdesign.vote.repository.AgendaRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

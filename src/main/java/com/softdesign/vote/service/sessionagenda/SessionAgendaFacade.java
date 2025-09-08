@@ -1,6 +1,7 @@
-package com.softdesign.vote.v1.service.sessionagenda;
+package com.softdesign.vote.service.sessionagenda;
 
-import com.softdesign.vote.v1.service.agenda.AgendaFacade;
+import com.softdesign.vote.dto.SessionAgendaDto;
+import com.softdesign.vote.service.agenda.AgendaFacade;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

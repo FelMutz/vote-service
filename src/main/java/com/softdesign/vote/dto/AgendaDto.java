@@ -1,4 +1,4 @@
-package com.softdesign.vote.service.agenda;
+package com.softdesign.vote.dto;
 
 import com.softdesign.vote.controller.v1.agenda.Agenda;
 import com.softdesign.vote.entity.AgendaEntity;

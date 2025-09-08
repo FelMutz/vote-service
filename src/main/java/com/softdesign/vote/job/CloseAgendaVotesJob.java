@@ -1,15 +1,16 @@
-package com.softdesign.vote.v1.job;
+package com.softdesign.vote.job;
 
 
-import com.softdesign.vote.v1.service.agenda.AgendaFacade;
-import com.softdesign.vote.v1.service.sessionagenda.SessionAgendaDto;
-import com.softdesign.vote.v1.service.sessionagenda.SessionAgendaFacade;
-import com.softdesign.vote.v1.service.voteagenda.VoteAgendaFacade;
+import com.softdesign.vote.service.agenda.AgendaFacade;
+import com.softdesign.vote.dto.SessionAgendaDto;
+import com.softdesign.vote.service.sessionagenda.SessionAgendaFacade;
+import com.softdesign.vote.service.voteagenda.VoteAgendaFacade;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.javacrumbs.shedlock.spring.annotation.SchedulerLock;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
 import static java.lang.Boolean.TRUE;
@@ -25,6 +26,7 @@ public class CloseAgendaVotesJob {
 
     @Scheduled(cron = "${jobs.session-agenda.cron}")
     @SchedulerLock(name = "myScheduledJob", lockAtLeastFor = "PT4M", lockAtMostFor = "PT10M")
+    @Transactional
     public void closeAgendaVotes() {
         log.info("Fechando votações das pautas que atingiram o tempo limite...");
         var expiredAgendas = sessionAgendaFacade.findByOpenIsTrueAndFinishDateBefore();

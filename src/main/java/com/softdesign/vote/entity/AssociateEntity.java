@@ -1,6 +1,6 @@
-package com.softdesign.vote.v1.entity;
+package com.softdesign.vote.entity;
 
-import com.softdesign.vote.v1.service.associate.AssociateDto;
+import com.softdesign.vote.dto.AssociateDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

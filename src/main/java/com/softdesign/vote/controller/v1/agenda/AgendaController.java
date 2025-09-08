@@ -1,4 +1,4 @@
-package com.softdesign.vote.v1.controller.v1.agenda;
+package com.softdesign.vote.controller.v1.agenda;
 
 import com.softdesign.vote.service.agenda.AgendaFacade;
 import jakarta.validation.Valid;

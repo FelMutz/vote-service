@@ -1,6 +1,7 @@
-package com.softdesign.vote.v1.service.associate;
+package com.softdesign.vote.service.associate;
 
-import com.softdesign.vote.v1.service.cpf.CpfValidatorService;
+import com.softdesign.vote.dto.AssociateDto;
+import com.softdesign.vote.service.cpf.CpfValidatorService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

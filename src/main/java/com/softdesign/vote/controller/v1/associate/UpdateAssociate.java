@@ -1,6 +1,6 @@
-package com.softdesign.vote.v1.controller.v1.associate;
+package com.softdesign.vote.controller.v1.associate;
 
-import com.softdesign.vote.service.associate.AssociateDto;
+import com.softdesign.vote.dto.AssociateDto;
 import lombok.*;
 
 @Data
