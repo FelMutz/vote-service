@@ -1,4 +1,4 @@
-package com.softdesign.vote.service.agenda;
+package com.softdesign.vote.v1.service.agenda;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;

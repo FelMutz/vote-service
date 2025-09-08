@@ -1,6 +1,6 @@
-package com.softdesign.vote.repository;
+package com.softdesign.vote.v1.repository;
 
-import com.softdesign.vote.entity.SessionAgendaEntity;
+import com.softdesign.vote.v1.entity.SessionAgendaEntity;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

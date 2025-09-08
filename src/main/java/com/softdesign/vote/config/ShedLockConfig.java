@@ -1,4 +1,4 @@
-package com.softdesign.vote.config;
+package com.softdesign.vote.v1.config;
 
 import net.javacrumbs.shedlock.core.LockProvider;
 import net.javacrumbs.shedlock.provider.jdbctemplate.JdbcTemplateLockProvider;

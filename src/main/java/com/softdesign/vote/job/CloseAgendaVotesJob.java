@@ -1,10 +1,10 @@
-package com.softdesign.vote.job;
+package com.softdesign.vote.v1.job;
 
 
-import com.softdesign.vote.service.agenda.AgendaFacade;
-import com.softdesign.vote.service.sessionagenda.SessionAgendaDto;
-import com.softdesign.vote.service.sessionagenda.SessionAgendaFacade;
-import com.softdesign.vote.service.voteagenda.VoteAgendaFacade;
+import com.softdesign.vote.v1.service.agenda.AgendaFacade;
+import com.softdesign.vote.v1.service.sessionagenda.SessionAgendaDto;
+import com.softdesign.vote.v1.service.sessionagenda.SessionAgendaFacade;
+import com.softdesign.vote.v1.service.voteagenda.VoteAgendaFacade;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.javacrumbs.shedlock.spring.annotation.SchedulerLock;

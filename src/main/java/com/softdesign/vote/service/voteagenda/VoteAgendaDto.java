@@ -1,6 +1,6 @@
-package com.softdesign.vote.service.voteagenda;
+package com.softdesign.vote.v1.service.voteagenda;
 
-import com.softdesign.vote.entity.VoteAgendaEntity;
+import com.softdesign.vote.v1.entity.VoteAgendaEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

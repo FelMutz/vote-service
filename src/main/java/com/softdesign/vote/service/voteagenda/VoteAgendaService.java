@@ -1,12 +1,10 @@
-package com.softdesign.vote.service.voteagenda;
+package com.softdesign.vote.v1.service.voteagenda;
 
-import com.softdesign.vote.repository.VoteAgendaRepository;
+import com.softdesign.vote.v1.repository.VoteAgendaRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
-import java.util.Optional;
 
 @AllArgsConstructor
 @Service

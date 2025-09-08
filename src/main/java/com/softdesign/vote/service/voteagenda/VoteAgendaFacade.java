@@ -1,7 +1,7 @@
-package com.softdesign.vote.service.voteagenda;
+package com.softdesign.vote.v1.service.voteagenda;
 
-import com.softdesign.vote.service.associate.AssociateFacade;
-import com.softdesign.vote.service.sessionagenda.SessionAgendaFacade;
+import com.softdesign.vote.v1.service.associate.AssociateFacade;
+import com.softdesign.vote.v1.service.sessionagenda.SessionAgendaFacade;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

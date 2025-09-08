@@ -1,6 +1,6 @@
-package com.softdesign.vote.repository;
+package com.softdesign.vote.v1.repository;
 
-import com.softdesign.vote.entity.AgendaEntity;
+import com.softdesign.vote.v1.entity.AgendaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

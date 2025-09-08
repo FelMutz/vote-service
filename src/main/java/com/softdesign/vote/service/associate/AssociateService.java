@@ -1,7 +1,7 @@
-package com.softdesign.vote.service.associate;
+package com.softdesign.vote.v1.service.associate;
 
-import com.softdesign.vote.entity.AssociateEntity;
-import com.softdesign.vote.repository.AssociateRepository;
+import com.softdesign.vote.v1.entity.AssociateEntity;
+import com.softdesign.vote.v1.repository.AssociateRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
