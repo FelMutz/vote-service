@@ -3,6 +3,7 @@ package com.softdesign.vote.controller.v1.agenda;
 import com.softdesign.vote.service.agenda.AgendaFacade;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class AgendaController {
     }
 
     @PostMapping
-    @ResponseStatus(code = org.springframework.http.HttpStatus.CREATED)
+    @ResponseStatus(code = HttpStatus.CREATED)
     public Agenda createAgenda(@RequestBody @Valid CreateAgenda createAgenda) {
         return agendaFacade.createAgenda(createAgenda.toDTO()).toResponse();
     }

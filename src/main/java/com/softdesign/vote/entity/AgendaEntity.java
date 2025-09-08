@@ -1,7 +1,6 @@
 package com.softdesign.vote.entity;
 
 import com.softdesign.vote.dto.AgendaDto;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

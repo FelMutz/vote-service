@@ -3,6 +3,7 @@ package com.softdesign.vote.controller.v1.associate;
 import com.softdesign.vote.service.associate.AssociateFacade;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,7 +26,7 @@ public class AssociateController {
     }
 
     @PostMapping()
-    @ResponseStatus(code = org.springframework.http.HttpStatus.CREATED)
+    @ResponseStatus(code = HttpStatus.CREATED)
     public Associate createAssociate(@RequestBody @Valid CreateAssociate createAssociate) {
         return associateFacade.createAssociate(createAssociate.toDTO()).toResponse();
     }
@@ -36,7 +37,7 @@ public class AssociateController {
     }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(code = org.springframework.http.HttpStatus.NO_CONTENT)
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
     public void deleteAssociate(@PathVariable Long id) {
         associateFacade.deleteAssociate(id);
     }
